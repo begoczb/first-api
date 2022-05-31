@@ -71,7 +71,7 @@ router.post("/", (req, res) => {
     !book.isbn ||
     typeof book.isbn !== "string" ||
     (book.year < 2007 && book.isbn.length !== 10) ||
-    (book.year > 2007 && book.isbn.length !== 13)
+    (book.year >= 2007 && book.isbn.length !== 13)
   ) {
     res.status(400).json({
       message: `Isbn is not valid`,
@@ -80,14 +80,23 @@ router.post("/", (req, res) => {
   }
 
   //4 digit length 1966 (isbn was implemented)
-  if (!book.year || typeof book.year !== "number") {
+  if (
+    !book.year ||
+    typeof book.year !== "number" ||
+    book.year.length < 4 ||
+    book.year.length > 5
+  ) {
     res.status(400).json({
       message: `Year is not valid`,
     });
     return;
   }
   // >= 0 <= 5
-  if (!book.rating || typeof book.rating !== "number") {
+  if (
+    !book.rating ||
+    typeof book.rating !== "number" ||
+    (book.rating >= 0 && book.rating <= 5)
+  ) {
     res.status(400).json({
       message: `Rating is not valid`,
     });
