@@ -67,7 +67,12 @@ router.post("/", (req, res) => {
     return;
   }
   //isbn 10 digits <jan 2007 && 13 digits > jan 2007
-  if (!book.isbn || typeof book.isbn !== "number") {
+  if (
+    !book.isbn ||
+    typeof book.isbn !== "string" ||
+    (book.year < 2007 && book.isbn.length !== 10) ||
+    (book.year > 2007 && book.isbn.length !== 13)
+  ) {
     res.status(400).json({
       message: `Isbn is not valid`,
     });
