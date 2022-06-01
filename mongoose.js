@@ -8,7 +8,8 @@ const bookSchema = new mongoose.Schema({
   rating: mongoose.SchemaTypes.Number,
   genre: mongoose.SchemaTypes.String,
   quote: mongoose.SchemaTypes.String,
-  standalone: mongoose.SchemaTypes.Boolean,
+  standalone: { type: mongoose.SchemaTypes.Boolean, required: true },
+  series_number: mongoose.SchemaTypes.Number,
 });
 
 const Book = mongoose.model("Book", bookSchema);
@@ -17,12 +18,16 @@ const MONGO_URI = "mongodb://localhost:27017/webdev-905";
 
 function createBook() {
   return Book.create({
-    title: "Child of the Prophecy",
-    author: "Juliet Marillier",
-    isbn: "978-0-7329-1093-8",
-    year: 2001,
+    title: "The Caves of Steel",
+    author: "Isaac Asimov",
+    isbn: "0-553-29340-0",
+    year: 1954,
     rating: 5,
-    genre: "",
+    genre: "Sci-Fi",
+    quote:
+      "There are degrees of justice, Elijah. When the lesser is incompatable with the greater, the lesser must give way.",
+    standalone: false,
+    series_number: 1,
   });
 }
 
