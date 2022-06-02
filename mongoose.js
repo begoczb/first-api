@@ -45,7 +45,7 @@ async function executeDatabaseThings() {
 
   const books = await Book.find();
   console.log(books);
-  return mongoose.connection.close();
+  await mongoose.connection.close();
 }
 
 executeDatabaseThings();
