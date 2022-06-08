@@ -1,0 +1,138 @@
+[{
+  "_id": {
+    "$oid": "62971e79f2a1dea9ab508427"
+  },
+  "title": "Northern Lights",
+  "author": "Phillip Pullman",
+  "isbn": "0-590-54178-1",
+  "year": 1995,
+  "rating": 5,
+  "quote": "We are all subject to the fates. But we must act as if we are not, or die of despair.",
+  "genre": "Fantasy"
+},{
+  "_id": {
+    "$oid": "62971e79f2a1dea9ab508428"
+  },
+  "title": "The Subtle Knife",
+  "author": "Phillip Pullman",
+  "isbn": "0-590-54243-5",
+  "year": 1997,
+  "rating": 5,
+  "quote": "It was difficult to tell them the truth when a lie would have been so much easier for them to understand.\n",
+  "genre": "Fantasy"
+},{
+  "_id": {
+    "$oid": "6297722cf9ff9d6106410136"
+  },
+  "title": "The Amber Spyglass",
+  "author": "Phillip Pullman",
+  "isbn": "0-590-54244-3",
+  "year": 2000,
+  "rating": 5,
+  "quote": "I have stolen ideas from every book I have ever read.",
+  "genre": "Fantasy"
+},{
+  "_id": {
+    "$oid": "62977adff9ff9d6106410137"
+  },
+  "title": "Daughter of the Forest",
+  "author": "Juliet Marillier",
+  "isbn": "0-7329-0977-5",
+  "year": 1999,
+  "rating": 5,
+  "quote": "My world was changing, and I was not ready for it.",
+  "genre": "Fantasy"
+},{
+  "_id": {
+    "$oid": "62977bd9f9ff9d6106410138"
+  },
+  "title": "Son of the Shadows",
+  "author": "Juliet Marillier",
+  "isbn": "978-0-7329-1029-7 ",
+  "year": 2000,
+  "rating": 5,
+  "quote": null,
+  "genre": "Fantasy",
+  "subgenre": "Historical"
+},{
+  "_id": {
+    "$oid": "62978650df528cba4cec7224"
+  },
+  "title": "Child of the Prophecy",
+  "author": "Juliet Marillier",
+  "isbn": "978-0-7329-1093-8",
+  "year": 2001,
+  "rating": 5,
+  "genre": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62978b665c9b504dc15ae964"
+  },
+  "title": "The Caves of Steel",
+  "author": "Isaac Asimov",
+  "isbn": "0-553-29340-0",
+  "year": 1954,
+  "rating": 5,
+  "genre": "Sci-Fi",
+  "quote": "There are degrees of justice, Elijah. When the lesser is incompatable with the greater, the lesser must give way.",
+  "standalone": false,
+  "series_number": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629e0f2f4775058a2576c86d"
+  },
+  "title": "The Caves of Steel",
+  "author": "Isaac Asimov",
+  "isbn": "0-553-29340-0",
+  "year": 1954,
+  "rating": 5,
+  "genre": "Sci-Fi",
+  "quote": "There are degrees of justice, Elijah. When the lesser is incompatable with the greater, the lesser must give way.",
+  "standalone": false,
+  "series_number": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629e0f75e52b79013a20de8b"
+  },
+  "title": "The Caves of Steel",
+  "author": "Isaac Asimov",
+  "isbn": "0-553-29340-0",
+  "year": 1954,
+  "rating": 5,
+  "genre": "Sci-Fi",
+  "quote": "There are degrees of justice, Elijah. When the lesser is incompatable with the greater, the lesser must give way.",
+  "standalone": false,
+  "series_number": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629e0fc6bacf55566facdf31"
+  },
+  "title": "The Caves of Steel",
+  "author": "Isaac Asimov",
+  "isbn": "0-553-29340-0",
+  "year": 1954,
+  "rating": 5,
+  "genre": "Sci-Fi",
+  "quote": "There are degrees of justice, Elijah. When the lesser is incompatable with the greater, the lesser must give way.",
+  "standalone": false,
+  "series_number": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629e1007bcaea7ac996e9316"
+  },
+  "title": "The Caves of Steel",
+  "author": "Isaac Asimov",
+  "isbn": "0-553-29340-0",
+  "year": 1954,
+  "rating": 5,
+  "genre": "Sci-Fi",
+  "quote": "There are degrees of justice, Elijah. When the lesser is incompatable with the greater, the lesser must give way.",
+  "standalone": false,
+  "series_number": 1,
+  "__v": 0
+}]

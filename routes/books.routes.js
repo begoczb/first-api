@@ -1,30 +1,36 @@
+const Book = require("../models/Book.model");
+
 const router = require("express").Router();
 
 //TEST
-const books = [
-  {
-    title: "book1",
-    author: "author1",
-    isbn: 0000,
-    year: 1994,
-    rating: 5,
-    quote: "some quote",
-  },
-  {
-    title: "book2",
-    author: "author2",
-    isbn: 0000,
-    year: 1994,
-    rating: 5,
-    quote: "some quote",
-  },
-];
+// const books = [
+//   {
+//     title: "book1",
+//     author: "author1",
+//     isbn: 0000,
+//     year: 1994,
+//     rating: 5,
+//     quote: "some quote",
+//   },
+//   {
+//     title: "book2",
+//     author: "author2",
+//     isbn: 0000,
+//     year: 1994,
+//     rating: 5,
+//     quote: "some quote",
+//   },
+// ];
 
 //GET ALL BOOKS
-router.get("/", (req, res) => {
-  res.json({
-    books: books,
-  });
+router.get("/", async (req, res) => {
+  try {
+    const allBooks = await Book.find();
+    res.status(200).json(allBooks);
+  } catch (err) {
+    console.error(err);
+    next(err);
+  }
 });
 
 //GET BOOK MATCHING TITLE
@@ -48,6 +54,16 @@ addRouteForKey("year");
 addRouteForKey("isbn");
 addRouteForKey("year");
 addRouteForKey("rating");
+
+router.get("/:id", async (req, res, next) => {
+  try {
+    const bookDetails = await Book.findById(req.params.id);
+    res.status(200).json(bookDetails);
+  } catch (err) {
+    console.error(err);
+    next();
+  }
+});
 // addRouteForKey("quote");
 
 router.post("/", (req, res) => {

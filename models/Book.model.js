@@ -8,7 +8,7 @@ const bookSchema = new mongoose.Schema({
   rating: mongoose.SchemaTypes.Number,
   genre: mongoose.SchemaTypes.String,
   quote: mongoose.SchemaTypes.String,
-  standalone: { type: mongoose.SchemaTypes.Boolean, required: true },
+  standalone: { type: mongoose.SchemaTypes.Boolean },
   series_number: mongoose.SchemaTypes.Number,
 });
 
